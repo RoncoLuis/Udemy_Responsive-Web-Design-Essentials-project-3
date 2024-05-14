@@ -1,18 +1,36 @@
-h1{
-    color: brown;
+/* Global properties (desktop view) */
+html{
+    background-color: #3b4252;
+}
+
+.container{
+    background-color: aliceblue;
+    max-width: 1024px; /* web view */
+    min-height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col{
+    background-color: blue;
+    min-height: 200px;
+    width: 30%;
+    margin: 10px
 }
 
 /* Responsive Design */
 /* tablet view */
 @media (max-width:768px){
-    h1{
-        color: blue;
+    .col{
+        width: 45%;
     }
 }
 
 /* mobile view */
 @media (max-width:400px){
-    h1{
-        color: chartreuse;
+    .col{
+        width: 100%;
     }
 }
